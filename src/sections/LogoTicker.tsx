@@ -37,7 +37,7 @@ export default function LogoTicker() {
                     className="flex items-center group cursor-pointer font-bold"
                   >
                     <span className="text-red-orange-500 text-3xl mr-5">&#10038;</span>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl transition duration-300 ease-in-out group-hover:text-[#f45c2d] group-hover:scale-105">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl transition duration-300 ease-in-out group-hover:text-[#f45c2d] active:text-[#f45c2d] active:duration-200 active:transition-all group-hover:scale-105">
                       {name}
                     </h2>
                   </div>
