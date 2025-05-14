@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import heroImage from "@/assets/hero-5.jpg";
 import Button from "@/components/Button";
@@ -22,18 +22,22 @@ export default function Hero() {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 bg-black/40">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            A haven of beautiful{" "}
-            <span className="text-red-orange-500">interior design</span>
-          </h1>
-          <p className="mt-4 text-base sm:text-lg md:text-xl max-w-2xl">
-            Elevate your living experience with our bespoke interior design
+          <div className="">
+            <h2 className="text-5xl max-w-6xl md:text-7xl  font-medium mt-6 text-center">
+              A haven of beautiful{" "}
+              <span className="text-red-orange-500 font-bold">interior and exterior </span> {" "}design
+            </h2>
+          </div>
+          <p className="mt-4 text-md md:text-2xl max-w-3xl">
+            Elevate your living experience with our bespoke interior and exterior design
             services. We bring your vision to life with a perfect blend of
             aesthetics and functionality.
           </p>
           <div className="py-5">
             <Button variant="primary" className="px-2">
-              <a href="tel:9178941241" className="text-sm">Contact us</a>
+              <a href="tel:9178941241" className="text-sm">
+                Contact us
+              </a>
             </Button>
           </div>
         </div>

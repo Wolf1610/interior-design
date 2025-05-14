@@ -8,6 +8,8 @@ import i2 from "@/assets/hero-2.jpg";
 import i3 from "@/assets/hero-3.jpg";
 import i4 from "@/assets/hero-4.jpg";
 import i5 from "@/assets/hero-5.jpg";
+import i6 from "@/assets/hero.jpg";
+import Button from "./Button";
 
 const images = [
   {
@@ -31,24 +33,32 @@ const images = [
     title: "Home Office",
     desc: "Minimal design with creative inspiration.",
   },
+  {
+    src: i6,
+    title: "Home Office",
+    desc: "Minimal design with creative inspiration.",
+  },
 ];
 
 export default function AnimatedImageGallery() {
   const router = useRouter();
 
   return (
-    <section className="px-4 py-12 bg-gray-100">
+    <section className="px-4 lg:px-5 py-8 bg-gray-100">
       <div className="mb-10">
-        <h2 className="text-3xl font-bold text-center">
-          Inspiration for home interior designs
-        </h2>
-        <p className="text-md text-center py-2">
+        <div className="pb-4 md:pb-6 lg:pb-8">
+          <h2 className="text-4xl md:text-6xl lg:text-6 font-medium mt-6 text-center">
+            Inspiration for Home{" "}
+            <span className="text-red-orange-500">Interior Design</span>
+          </h2>
+        </div>
+        <p className="text-md md:text-xl text-center pb-10">
           Give your home a new look with these interior design ideas curated for
           you
         </p>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {images.map((img, i) => (
           <motion.div
             key={i}
@@ -65,9 +75,7 @@ export default function AnimatedImageGallery() {
             />
 
             {/* Bottom-left overlay info */}
-            <div
-              className="absolute bottom-0 left-0 w-full text-left bg-black/60 p-4 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-300"
-            >
+            <div className="absolute bottom-0 left-0 w-full text-left bg-black/60 p-4 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-300">
               <motion.h3
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -100,6 +108,15 @@ export default function AnimatedImageGallery() {
             </div>
           </motion.div>
         ))}
+      </div>
+      {/* View All Link */}
+      <div className="flex justify-end mt-6 px-1">
+        <span
+          onClick={() => router.push("/projects")}
+          className="text-[#f45c2d] text-sm font-medium cursor-pointer hover:underline hover:opacity-90 transition duration-200"
+        >
+          View All &gt;
+        </span>
       </div>
     </section>
   );

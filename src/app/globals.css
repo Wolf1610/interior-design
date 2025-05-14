@@ -46,8 +46,23 @@
   padding-right: 1.3rem;
 }
 
-.section {
+/* .section {
   @apply py-24 md:py-32 lg:py-40
+} */
+
+/* If not using Tailwind aspect-ratio plugin */
+.aspect-w-16.aspect-h-9 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
 }
+.aspect-w-16.aspect-h-9 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 

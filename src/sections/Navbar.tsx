@@ -9,7 +9,7 @@ import logoImage from "@/assets/logo.svg";
 const navLinks = [
   { label: "Interiors", href: "#interiors" },
   { label: "Design Ideas", href: "#design-ideas" },
-  { label: "Studio Portfolio", href: "#portfolio" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "About Us", href: "#about" },
   { label: "Contact Us", href: "#contact" },
 ];
@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <section className="fixed w-full top-0 z-50 bg-white">
+      <section className="fixed w-full top-0 z-50 bg-white shadow-xl">
         <div className="container">
           <div className="">
             <div className="flex justify-between p-2 md:pr-2 items-center">
@@ -32,14 +32,14 @@ export default function Navbar() {
                   />
                 </div>
                 <div>
-                  <a href="#" className="font-md">Elegance</a>
+                  <a href="#" className="font-bold tracking-wide md:text-md lg:text-lg">Elegance Architect</a>
                 </div>
               </div>
               <div className="flex justify-between">
                 <div className="lg:flex justify-center items-center hidden">
-                  <nav className="flex gap-6 font-sm text-sm">
+                  <nav className="flex gap-6 font-medium text-sm md:text-md lg:text-md">
                     {navLinks.map((link) => (
-                      <a href={link.href} key={link.label}>
+                      <a href={link.href} key={link.label} className="tracking-wide">
                         {link.label}
                       </a>
                     ))}
@@ -100,7 +100,7 @@ export default function Navbar() {
                 >
                   <div className="flex flex-col items-center cursor-pointer gap-4 py-4 ">
                     {navLinks.map((link) => (
-                      <a href={link.href} key={link.label} className="py-2">
+                      <a href={link.href} key={link.label} className="py-2 tracking-wide">
                         {link.label}
                       </a>
                     ))}
