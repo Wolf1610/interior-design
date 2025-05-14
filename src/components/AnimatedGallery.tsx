@@ -18,132 +18,170 @@ import i12 from "@/assets/home-design-5.jpg";
 import i13 from "@/assets/home-design-6.jpg";
 import i15 from "@/assets/home-design-8.jpg";
 import i16 from "@/assets/home-design-9.jpg";
-import i17 from "@/assets/home-design-10.jpg";
+import i17 from "@/assets/new/ext.jpeg";
 import i18 from "@/assets/home-design-11.jpg";
 import i19 from "@/assets/home-design-12.jpg";
 import i20 from "@/assets/home-design-13.jpg";
-import i21 from "@/assets/office.jpg";
+import i21 from "@/assets/new/ext4.jpg";
 import i22 from "@/assets/office-1.jpg";
 import i23 from "@/assets/office-2.jpg";
 import i24 from "@/assets/office-3.jpg";
-import i25 from "@/assets/office-4.jpg";
-import i26 from "@/assets/office-5.jpg";
+import i25 from "@/assets/new/of2.jpg";
+import i26 from "@/assets/new/of6.jpg";
+import i27 from "@/assets/new/ext7.jpg";
+import i28 from "@/assets/new/ext5.jpg";
 
 const images = [
   {
     src: i1,
-    link: "ModernLivingRoom",
+    link: "PlaceTitle1",
     title: "Modern Living Room",
-    desc: "Sleek and elegant design with natural light.",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i2,
-    link: "LuxuryBathroom",
-    title: "Luxury Bathroom",
-    desc: "Marble finishes with ambient lighting.",
+    link: "PlaceTitle2",
+    title: "Place Title 2",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i3,
-    title: "Cozy Bedroom",
-    link: "CozyBedroom",
-    desc: "Warm tones for a restful atmosphere.",
+    title: "Place Title 3",
+    link: "PlaceTitle3",
+    desc: "Location | Plot | sq. ft.",
   },
-  { src: i4, title: "Stylish Kitchen", desc: "Functional meets fashionable." },
+  { src: i4, title: "Stylish Kitchen", desc: "Location | Plot | sq. ft.", },
   {
     src: i5,
-    link: "HomeOffice",
-    title: "Home Office",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle4",
+    title: "Place Title 4",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i7,
-    link: "HomeOffice2",
-    title: "Home-Office-2",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle5",
+    title: "Place Title 5",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i8,
-    link: "HomeOffice3",
-    title: "Home-Office-3",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle6",
+    title: "Place Title 6",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i9,
-    link: "HomeOffice4",
-    title: "Home-Office-4",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle7",
+    title: "Place Title 7",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i10,
-    link: "HomeOffice5",
-    title: "Home-Office-5",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle8",
+    title: "Place Title 8",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i11,
-    link: "HomeOffice6",
-    title: "Home-Office-6",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle9",
+    title: "Place Title 9",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i12,
-    link: "HomeOffice7",
-    title: "Home-Office-7",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle10",
+    title: "Place Title 110",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i13,
-    link: "HomeOffice8",
-    title: "Home-Office-8",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle11",
+    title: "Place Title 11",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i15,
-    link: "HomeOffice9",
-    title: "Home-Office-9",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle12",
+    title: "Place Title 12",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i16,
-    link: "HomeOffice10",
-    title: "Home-Office-10",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle13",
+    title: "Place Title 13",
+    desc: "Location | Plot | sq. ft.",
+  },
+  {
+    src: i17,
+    link: "PlaceTitle20",
+    title: "Place Title 20",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i18,
-    link: "HomeOffice12",
-    title: "Home-Office-12",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle14",
+    title: "Place Title 14",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i19,
-    link: "HomeOffice13",
-    title: "Home-Office-13",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle15",
+    title: "Place Title 15",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i20,
-    link: "HomeOffice14",
-    title: "Home-Office-14",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle16",
+    title: "Place Title 16",
+    desc: "Location | Plot | sq. ft.",
+  },
+  {
+    src: i21,
+    link: "PlaceTitle21",
+    title: "Place Title 21",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i22,
-    link: "HomeOffice16",
-    title: "Home-Office-16",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle17",
+    title: "Place Title 17",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i23,
-    link: "HomeOffice17",
-    title: "Home-Office-17",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle18",
+    title: "Place Title 18",
+    desc: "Location | Plot | sq. ft.",
   },
   {
     src: i24,
-    link: "HomeOffice18",
-    title: "Home-Office-18",
-    desc: "Minimal design with creative inspiration.",
+    link: "PlaceTitle19",
+    title: "Place Title 19",
+    desc: "Location | Plot | sq. ft.",
+  },
+  {
+    src: i25,
+    link: "PlaceTitle22",
+    title: "Place Title 22",
+    desc: "Location | Plot | sq. ft.",
+  },
+  {
+    src: i26,
+    link: "PlaceTitle22",
+    title: "Place Title 22",
+    desc: "Location | Plot | sq. ft.",
+  },
+  {
+    src: i27,
+    link: "PlaceTitle23",
+    title: "Place Title 23",
+    desc: "Location | Plot | sq. ft.",
+  },
+  {
+    src: i28,
+    link: "PlaceTitle23",
+    title: "Place Title 23",
+    desc: "Location | Plot | sq. ft.",
   },
 ];
 
