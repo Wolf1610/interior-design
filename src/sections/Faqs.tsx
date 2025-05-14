@@ -36,6 +36,23 @@ const faqs = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
 export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
@@ -46,15 +63,29 @@ export default function Faqs() {
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
-        <div className="mb-14 md:mb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-14 md:mb-20"
+        >
           <h2 className="text-4xl md:text-5xl font-semibold text-center mb-10">
             FAQs? We've got <span className="text-red-orange-500">answers</span>
           </h2>
-        </div>
-        <div className="flex flex-col gap-6">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {faqs.map((faq, index) => (
             <motion.div
               key={faq.question}
+              variants={itemVariants}
               layout
               className="bg-white rounded-md border border-gray-200 shadow-md p-6"
               transition={{ layout: { duration: 1 } }}
@@ -89,7 +120,7 @@ export default function Faqs() {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0 }}
+                    transition={{ duration: 0.3 }}
                     className="overflow-hidden mt-4 text-gray-700"
                   >
                     <p>{faq.answer}</p>
@@ -98,7 +129,7 @@ export default function Faqs() {
               </AnimatePresence>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

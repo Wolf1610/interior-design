@@ -4,11 +4,20 @@ import { useState } from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import logoImage from "@/assets/logo.svg";
 
 const navLinks = [
-  { label: "Interiors", href: "#interiors" },
-  { label: "Design Ideas", href: "#design-ideas" },
+  { label: "Home", href: "/" },
+  {
+    label: "Design Ideas",
+    href: "#design-ideas",
+    submenu: [
+      { label: "Living Room", href: "#living-room" },
+      { label: "Bedroom", href: "#bedroom" },
+      { label: "Kitchen", href: "#kitchen" },
+    ],
+  },
   { label: "Portfolio", href: "#portfolio" },
   { label: "About Us", href: "#about" },
   { label: "Contact Us", href: "#contact" },
@@ -16,6 +25,7 @@ const navLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
     <>
@@ -32,16 +42,60 @@ export default function Navbar() {
                   />
                 </div>
                 <div>
-                  <a href="#" className="font-bold tracking-wide md:text-md lg:text-lg">Elegance Architect</a>
+                  <a
+                    href="#"
+                    className="font-bold tracking-wide md:text-md lg:text-lg"
+                  >
+                    Elegance Architect
+                  </a>
                 </div>
               </div>
               <div className="flex justify-between">
                 <div className="lg:flex justify-center items-center hidden">
-                  <nav className="flex gap-6 font-medium text-sm md:text-md lg:text-md">
+                  <nav className="flex gap-6 text-sm md:text-md lg:text-md relative">
                     {navLinks.map((link) => (
-                      <a href={link.href} key={link.label} className="tracking-wide">
-                        {link.label}
-                      </a>
+                      <div key={link.label} className="relative">
+                        {link.submenu ? (
+                          <>
+                            <button
+                              onClick={() =>
+                                setOpenDropdown(
+                                  openDropdown === link.label
+                                    ? null
+                                    : link.label
+                                )
+                              }
+                              className="tracking-wide flex items-center gap-1"
+                            >
+                              {link.label}
+                              <ChevronDown
+                                className={`w-4 h-4 transition-transform duration-300 ${
+                                  openDropdown === link.label
+                                    ? "rotate-180"
+                                    : ""
+                                }`}
+                              />
+                            </button>
+                            {openDropdown === link.label && (
+                              <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-sm shadow-md z-50">
+                                {link.submenu.map((sublink) => (
+                                  <a
+                                    key={sublink.label}
+                                    href={sublink.href}
+                                    className="block px-4 py-2 text-sm hover:scale-110 transition-all duration-300"
+                                  >
+                                    {sublink.label}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                          </>
+                        ) : (
+                          <a href={link.href} className="tracking-wide">
+                            {link.label}
+                          </a>
+                        )}
+                      </div>
                     ))}
                   </nav>
                 </div>
@@ -72,7 +126,7 @@ export default function Navbar() {
                       x2="21"
                       y2="6"
                       className={twMerge(
-                        "origin-left transition-all",
+                        "origin-left ",
                         isOpen && "rotate-45 -translate-y-1"
                       )}
                     ></line>
@@ -82,7 +136,7 @@ export default function Navbar() {
                       x2="21"
                       y2="18"
                       className={twMerge(
-                        "origin-left transition-all",
+                        "origin-left ",
                         isOpen && "-rotate-45 translate-y-1"
                       )}
                     ></line>
@@ -90,26 +144,84 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <AnimatePresence>
-              {isOpen && (
-                <motion.div
-                  initial={{ height: 0 }}
-                  animate={{ height: "auto" }}
-                  exit={{ height: 0 }}
-                  className="overflow-hidden"
-                >
-                  <div className="flex flex-col items-center cursor-pointer gap-4 py-4 ">
-                    {navLinks.map((link) => (
-                      <a href={link.href} key={link.label} className="py-2 tracking-wide">
-                        {link.label}
-                      </a>
-                    ))}
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
           </div>
         </div>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="flex flex-col justify-center"
+            >
+              {navLinks.map((link) => (
+                <div key={link.label} className="border-b border-gray-300">
+                  {link.submenu ? (
+                    <>
+                      <button
+                        onClick={() =>
+                          setOpenDropdown(
+                            openDropdown === link.label ? null : link.label
+                          )
+                        }
+                        className="w-full flex justify-between items-center px-8 py-5 text-md md:text-xl transition-all"
+                      >
+                        {link.label}
+                        <ChevronDown
+                          className={`w-5 h-5 transition-transform ${
+                            openDropdown === link.label ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      <AnimatePresence>
+                        {openDropdown === link.label && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="flex flex-col px-10 pb-3"
+                          >
+                            {link.submenu.map((sublink) => (
+                              <a
+                                href={sublink.href}
+                                key={sublink.label}
+                                onClick={() => setIsOpen(false)}
+                                className="py-2 text-sm md:text-md hover:underline border-t border-gray-300"
+                              >
+                                {sublink.label}
+                              </a>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </>
+                  ) : (
+                    <a
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      className="flex justify-between text-md items-center px-8 py-5 md:text-xl hover:bg-white/5 hover:scale-105 transition-all"
+                    >
+                      {link.label}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </section>
     </>
   );

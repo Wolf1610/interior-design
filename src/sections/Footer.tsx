@@ -39,6 +39,11 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                  Exteriors
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Design Ideas
                 </a>
               </li>
