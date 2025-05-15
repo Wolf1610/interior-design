@@ -63,8 +63,8 @@ export default function Hero() {
             className="py-5"
           >
             <Button variant="primary" className="px-2">
-              <a href="tel:7979010425" className="text-sm">
-                Contact us
+              <a href="tel:7979010425" className="text-md">
+                Contact Us
               </a>
             </Button>
           </motion.div>
