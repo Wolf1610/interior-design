@@ -70,7 +70,7 @@ export default function Faqs() {
           viewport={{ once: true }}
           className="mb-14 md:mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-semibold text-center mb-10">
+          <h2 className="text-4xl md:text-6xl text-center mb-10">
             FAQs? We've got <span className="text-red-orange-500">answers</span>
           </h2>
         </motion.div>

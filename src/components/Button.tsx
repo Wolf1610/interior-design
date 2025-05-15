@@ -3,7 +3,7 @@ import { cva } from "class-variance-authority";
 
 import "@/app/globals.css";
 
-const classes = cva("border h-12 rounded-full px-6 font-medium", {
+const classes = cva("border h-12 rounded-lg px-6 font-medium", {
   variants: {
     variant: {
       primary: "bg-red-orange-500 text-white border-red-orange-500",

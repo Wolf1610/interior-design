@@ -5,7 +5,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import logoImage from "@/assets/logo.svg";
+import logoImage from "@/assets/intarch-edit.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -29,24 +29,24 @@ export default function Navbar() {
 
   return (
     <>
-      <section className="fixed w-full top-0 z-50 bg-white shadow-xl">
+      <section className="fixed w-full lg:py-2 top-0 z-50 bg-white shadow-xl">
         <div className="container">
           <div className="">
-            <div className="flex justify-between p-2 md:pr-2 items-center">
+            <div className="flex justify-between py-3 md:py-3 md:pr-2 items-center">
               <div className="flex items-center gap-1">
-                <div>
+                <div className="mb-1"> 
                   <Image
                     src={logoImage}
                     alt="logo"
-                    className="h-9 w-auto md:h-auto cursor-pointer"
+                    className="h-4 w-auto md:h-4 cursor-pointer"
                   />
                 </div>
                 <div>
                   <a
                     href="#"
-                    className="font-bold tracking-wide md:text-md lg:text-lg"
+                    className="font-bold tracking-wide text-sm md:text-md lg:text-lg"
                   >
-                    Elegance Architect
+                    INTARCH STUDIO
                   </a>
                 </div>
               </div>

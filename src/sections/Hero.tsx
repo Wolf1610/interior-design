@@ -63,7 +63,7 @@ export default function Hero() {
             className="py-5"
           >
             <Button variant="primary" className="px-2">
-              <a href="tel:9178941241" className="text-sm">
+              <a href="tel:7979010425" className="text-sm">
                 Contact us
               </a>
             </Button>

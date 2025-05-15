@@ -17,14 +17,14 @@ export default function Footer() {
           {/* Logo + Intro */}
           <div className="space-y-4">
             <h3 className="text-xl font-semibold uppercase tracking-wide">
-              <span className="block">ELEGANCE CONSULTANTS</span>
+              <span className="block">INTARCH STUDIO CONSULTANTS</span>
               <span className="text-lg text-gray-300">
-                Mr. Sachin Kumar
+                Mr. Himanshu Sahu
               </span>
             </h3>
             <p className="text-sm text-gray-400">
               Welcome to the world of signature style architecture & interiors
-              by Elegance Architect.
+              by Intarch Studio.
             </p>
           </div>
 

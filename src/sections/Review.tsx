@@ -14,7 +14,7 @@ const testimonials = [
     name: "Rohit Paul & Shveta",
     location: "Gurugram",
     testimonial:
-      "Hats off to the entire team at Elegence. They finished the project ahead of time.",
+      "Hats off to the entire team at Intrach Studio. They finished the project ahead of time.",
   },
   {
     thumbnail: thumbnail2,

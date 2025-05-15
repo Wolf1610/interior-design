@@ -8,7 +8,6 @@ import i2 from "@/assets/hero-2.jpg";
 import i3 from "@/assets/hero-3.jpg";
 import i4 from "@/assets/hero-4.jpg";
 import i5 from "@/assets/hero-5.jpg";
-import i6 from "@/assets/hero.jpg";
 import i7 from "@/assets/home-design.jpg";
 import i8 from "@/assets/home-design-1.jpg";
 import i9 from "@/assets/home-design-2.jpg";
@@ -189,7 +188,7 @@ export default function AnimatedImageGallery() {
   const router = useRouter();
 
   return (
-    <section className="px-4 lg:px-5 py-8 bg-gray-100">
+    <section className="py-8 bg-gray-100">
       <div className="mb-10">
         <div className="pb-4 md:pb-6 lg:pb-8">
           <h2 className="text-4xl md:text-6xl lg:text-6 font-medium mt-6 text-center">
