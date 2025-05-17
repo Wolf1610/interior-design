@@ -1,12 +1,12 @@
-import Hero from "@/sections/Hero";
-import Navbar from "../sections/Navbar";
-import CounterSection from "@/sections/CountSec";
-import LogoTicker from "@/sections/LogoTicker";
-import EndCounterSection from "@/sections/endCountSec";
-import GalleryPage from "@/sections/Gallery";
-import ReviewSection from "@/sections/Review";
-import Faqs from "@/sections/Faqs";
-import Footer from "@/sections/Footer";
+import Hero from "@/sections/Home/Hero";
+import Navbar from "../sections/Home/Navbar";
+import CounterSection from "@/sections/Home/CountSec";
+import LogoTicker from "@/sections/Home/LogoTicker";
+import EndCounterSection from "@/sections/Home/endCountSec";
+import GalleryPage from "@/sections/Home/Gallery";
+import ReviewSection from "@/sections/Home/Review";
+import Faqs from "@/sections/Home/Faqs";
+import Footer from "@/sections/Home/Footer";
 
 export default function Home() {
   return (

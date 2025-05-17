@@ -33,7 +33,7 @@ import i28 from "@/assets/new/ext5.jpg";
 const images = [
   {
     src: i1,
-    link: "PlaceTitle1",
+    link: "project/PlaceTitle1",
     title: "Modern Living Room",
     desc: "Location | Plot | sq. ft.",
   },
