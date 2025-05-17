@@ -29,7 +29,7 @@ export default function Hero() {
               duration: 0.5,
               delay: 0.5,
             }}
-            className=""
+            className="pb-3"
           >
             <h2 className="text-5xl max-w-6xl md:text-7xl  font-medium mt-6 text-center">
               A haven of beautiful{" "}
@@ -46,6 +46,7 @@ export default function Hero() {
               duration: 0.5,
               delay: 1,
             }}
+            className="pb-3"
           >
             <p className="mt-4 text-md font-medium md:text-2xl max-w-3xl">
               Elevate your living experience with our bespoke interior and
