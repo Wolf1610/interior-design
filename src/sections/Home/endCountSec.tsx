@@ -26,7 +26,7 @@ export default function EndCounterSection() {
             <p className="text-2xl md:text-2xl lg: text-black mb-2">with</p>
           </div>
           <div className="text-red-orange-500 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
-            {startCount && <CountUp end={18} duration={3} />}+
+            {startCount && <CountUp end={8} duration={3} />}+
           </div>{" "}
           <div>
             <p className="text-2xl md:text-3xl lg:text-4xl text-black mt-8">
