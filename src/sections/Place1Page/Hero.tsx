@@ -5,6 +5,7 @@ import i1 from "../../../public/place-1/place-1.jpg";
 import Image from "next/image";
 import { ChevronsDown } from "lucide-react";
 import { motion } from "framer-motion";
+import Button from "@/components/Button";
 
 export default function Hero() {
   return (
@@ -33,9 +34,7 @@ export default function Hero() {
           >
             <h2 className="text-5xl max-w-6xl md:text-7xl  font-medium mt-6 text-center">
               A haven of beautiful{" "}
-              <span className="text-red-orange-500 font-bold">
-                House 1{" "}
-              </span>{" "}
+              <span className="text-red-orange-500 font-semibold">House 1 </span>{" "}
             </h2>
           </motion.div>
           <motion.div
@@ -45,6 +44,7 @@ export default function Hero() {
               duration: 0.5,
               delay: 1,
             }}
+            className="pt-4 md:pt-6"
           >
             <p className="mt-4 text-md font-medium md:text-2xl max-w-3xl">
               PROJECT LOCATION: PLACE-1
@@ -53,6 +53,21 @@ export default function Hero() {
               <br />
               BUILT UP AREA: SQ. FT.
             </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: "100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.5,
+              delay: 1.75,
+            }}
+            className="pt-8 py-5 md:pt-10"
+          >
+            <Button variant="primary" className="px-2">
+              <a href="tel:7979010425" className="text-md">
+                Contact Us
+              </a>
+            </Button>
           </motion.div>
         </div>
 
