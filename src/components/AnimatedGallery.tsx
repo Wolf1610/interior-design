@@ -32,7 +32,7 @@ import i28 from "@/assets/new/ext5.jpg";
 
 const images = [
   {
-    src: i1,
+    src: "https://res.cloudinary.com/db2vutcez/image/upload/v1747493501/hero-1_rwutog.jpg",
     link: "project/PlaceTitle1",
     title: "Modern Living Room",
     desc: "Location | Plot | sq. ft.",
@@ -204,6 +204,8 @@ export default function AnimatedImageGallery() {
               <Image
                 src={img.src}
                 alt={img.title}
+                width={300}
+                height={300}
                 layout="responsive"
                 className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
