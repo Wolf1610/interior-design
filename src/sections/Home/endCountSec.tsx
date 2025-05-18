@@ -19,7 +19,7 @@ export default function EndCounterSection() {
   }, [inView, startCount]);
   // bg-[#f9f9fb]
   return (
-    <section ref={ref} className="mt-10 md:mt-15 lg:mt-20 px-4 pb-20">
+    <section ref={ref} className="mt-10 md:mt-15 lg:mt-20 px-4 pb-20 overflow-x-hidden">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex px-29 md:px-90">
           <div>

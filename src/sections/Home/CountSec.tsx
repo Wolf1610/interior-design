@@ -1,8 +1,8 @@
 "use client";
 
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
-import { useState, useEffect } from "react";
+  import CountUp from "react-countup";
+  import { useInView } from "react-intersection-observer";
+  import { useState, useEffect } from "react";
 
 export default function CounterSection() {
   const { ref, inView } = useInView({
@@ -19,7 +19,7 @@ export default function CounterSection() {
   }, [inView, startCount]);
 // bg-[#f9f9fb]
   return (
-    <section ref={ref} className="mt-10 md:mt-15 lg:mt-20 px-4 ">
+    <section ref={ref} className="pb-12 mt-10 md:mt-15 lg:mt-20 px-4 overflow-x-hidden">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold italic text-black mb-2">
           Executed
@@ -31,7 +31,7 @@ export default function CounterSection() {
             </p>
           </div>
           <div className="text-red-orange-500 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
-            {startCount && <CountUp end={1289} duration={3} />}+
+            {startCount && <CountUp end={1183} duration={3} />}+
           </div>
         </div>{" "}
         <p className="text-3xl md:text-4xl md:ml-30 lg:ml-40 text-black mt-2">

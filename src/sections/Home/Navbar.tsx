@@ -19,7 +19,7 @@ const navLinks = [
     ],
   },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "About Us", href: "#about" },
+  { label: "About Us", href: "/aboutus" },
   { label: "Contact Us", href: "#contact" },
 ];
 
@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <>
-      <section className="fixed w-full lg:py-2 top-0 z-50 bg-white shadow-xl">
+      <section className="fixed w-full lg:py-2 top-0 z-50 bg-white shadow-xl overflow-x-hidden">
         <div className="container">
           <div className="">
             <div className="flex justify-between py-3 md:py-3 md:pr-2 items-center">

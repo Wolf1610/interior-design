@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import YoutubeSectionCard from "@/components/place-1/youtube";
+import YoutubeSectionCard from "@/components/project-place-1/youtube";
 import thumbnail2 from "@/assets/family-2.jpg";
 import { useRouter } from "next/navigation";
 
