@@ -31,7 +31,7 @@ export default function CounterSection() {
             </p>
           </div>
           <div className="text-red-orange-500 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
-            {startCount && <CountUp end={1183} duration={3} />}+
+            {startCount && <CountUp end={200} duration={3} />}+
           </div>
         </div>{" "}
         <p className="text-3xl md:text-4xl md:ml-30 lg:ml-40 text-black mt-2">

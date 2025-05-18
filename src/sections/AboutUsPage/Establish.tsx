@@ -83,7 +83,7 @@ export default function CounterSection() {
           variants={childVariants}
         >
           Intarch Studio Consultant is one of the most renowned architectural and
-          interior design firms in Bangalore.
+          interior design firms in Ranchi.
           <br />
           <br />
           With over 8 years of experience, we have consistently delivered innovative

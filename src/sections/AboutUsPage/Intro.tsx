@@ -32,7 +32,7 @@ const Intro = () => {
     >
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-4xl md:text-6xl lg:text-7xl font-semibold lg:w-[85%] leading-snug flex flex-wrap overflow-hidden overflow-x-hidden"
+          className="text-4xl md:text-6xl lg:text-7xl font-semibold lg:w-[85%] leading-snug flex flex-wrap overflow-hidden overflow-x-hidden" 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

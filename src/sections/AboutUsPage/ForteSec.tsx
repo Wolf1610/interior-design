@@ -66,7 +66,7 @@ export default function ForteSec() {
             <motion.div className="py-4" variants={itemVariants}>
               <h1 className="text-xl md:text-3xl py-2 text-black font-bold tracking-wide">Our Goal.</h1>
               <p>
-                Client satisfaction is our top priority in every project, which has earned us a place among the leading architects and interior designers in Bangalore.
+                Client satisfaction is our top priority in every project, which has earned us a place among the leading architects and interior designers in Ranchi.
               </p>
             </motion.div>
             <motion.div className="py-4" variants={itemVariants}>
