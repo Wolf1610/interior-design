@@ -20,7 +20,7 @@ const navLinks = [
   },
   { label: "Portfolio", href: "#portfolio" },
   { label: "About Us", href: "/aboutus" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ export default function Navbar() {
                 </div>
                 <div>
                   <a
-                    href="#"
+                    href="/"
                     className="font-bold tracking-wide text-sm md:text-md lg:text-lg"
                   >
                     INTARCH STUDIO

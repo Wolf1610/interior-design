@@ -58,7 +58,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                <a href="/contact" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Contact Us
                 </a>
               </li>
