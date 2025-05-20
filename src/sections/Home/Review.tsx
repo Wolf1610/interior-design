@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
         </motion.div>
 
         {/* View All Link */}
-        <motion.div
+        {/* <motion.div
           className="flex justify-end mt-6 px-7 md:px-10 lg:px-9"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export default function TestimonialsSection() {
           >
             View All &gt;
           </span>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

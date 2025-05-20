@@ -34,17 +34,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
-                  Interiors
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
-                  Exteriors
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
-                  Design Ideas
+                  Home
                 </a>
               </li>
               <li>
@@ -70,17 +60,17 @@ export default function Footer() {
             <h4 className="font-bold text-white uppercase mb-4">Projects</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                <a href="/project-category/architecture " className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Architecture
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                <a href="/project-category/interior" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Interior
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                <a href="/project-category/cultural-complex" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Cultural Complexes
                 </a>
               </li>

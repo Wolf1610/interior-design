@@ -3,56 +3,17 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import i2 from "@/assets/hero-2.jpg";
-import i3 from "@/assets/hero-3.jpg";
-import i4 from "@/assets/hero-4.jpg";
-import i5 from "@/assets/hero-5.jpg";
 import i7 from "@/assets/home-design.jpg";
-import i8 from "@/assets/home-design-1.jpg";
 import i9 from "@/assets/home-design-2.jpg";
-import i10 from "@/assets/home-design-3.jpg";
-import i11 from "@/assets/home-design-4.jpg";
 import i12 from "@/assets/home-design-5.jpg";
 import i13 from "@/assets/home-design-6.jpg";
 import i15 from "@/assets/home-design-8.jpg";
 import i17 from "@/assets/new/ext.jpeg";
 import i18 from "@/assets/home-design-11.jpg";
-import i19 from "@/assets/home-design-12.jpg";
-import i20 from "@/assets/home-design-13.jpg";
 import i21 from "@/assets/new/ext4.jpg";
-import i22 from "@/assets/office-1.jpg";
-import i23 from "@/assets/office-2.jpg";
-import i24 from "@/assets/office-3.jpg";
-import i25 from "@/assets/new/of2.jpg";
-import i26 from "@/assets/new/of6.jpg";
-import i28 from "@/assets/new/ext5.jpg";
+
 
 const images = [
-  {
-    src: "https://res.cloudinary.com/db2vutcez/image/upload/v1747493501/hero-1_rwutog.jpg",
-    link: "project/PlaceTitle1",
-    title: "Modern Living Room",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i2,
-    link: "project/PlaceTitle2",
-    title: "Place Title 2",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i3,
-    title: "Place Title 3",
-    link: "project/PlaceTitle3",
-    desc: "Location | Plot | sq. ft.",
-  },
-  { src: i4, title: "Stylish Kitchen", desc: "Location | Plot | sq. ft.", },
-  {
-    src: i5,
-    link: "project/PlaceTitle4",
-    title: "Place Title 4",
-    desc: "Location | Plot | sq. ft.",
-  },
   {
     src: i7,
     link: "project/PlaceTitle5",
@@ -60,27 +21,9 @@ const images = [
     desc: "Location | Plot | sq. ft.",
   },
   {
-    src: i8,
-    link: "project/PlaceTitle6",
-    title: "Place Title 6",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
     src: i9,
     link: "project/PlaceTitle7",
     title: "Place Title 7",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i10,
-    link: "project/PlaceTitle8",
-    title: "Place Title 8",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i11,
-    link: "project/PlaceTitle9",
-    title: "Place Title 9",
     desc: "Location | Plot | sq. ft.",
   },
   {
@@ -114,78 +57,18 @@ const images = [
     desc: "Location | Plot | sq. ft.",
   },
   {
-    src: i19,
-    link: "project/PlaceTitle15",
-    title: "Place Title 15",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i20,
-    link: "project/PlaceTitle16",
-    title: "Place Title 16",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
     src: i21,
     link: "project/PlaceTitle21",
     title: "Place Title 21",
     desc: "Location | Plot | sq. ft.",
   },
-  {
-    src: i22,
-    link: "project/PlaceTitle17",
-    title: "Place Title 17",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i23,
-    link: "project/PlaceTitle18",
-    title: "Place Title 18",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i24,
-    link: "project/PlaceTitle19",
-    title: "Place Title 19",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i25,
-    link: "project/PlaceTitle22",
-    title: "Place Title 22",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i26,
-    link: "project/PlaceTitle24",
-    title: "Place Title 22",
-    desc: "Location | Plot | sq. ft.",
-  },
-  {
-    src: i28,
-    link: "project/PlaceTitle23",
-    title: "Place Title 23",
-    desc: "Location | Plot | sq. ft.",
-  },
 ];
 
-export default function AnimatedImageGallery() {
+export default function Corporate_page() {
   const router = useRouter();
 
   return (
-    <section className="py-8 bg-gray-100">
-      <div className="mb-10">
-        <div className="pb-4 md:pb-6 lg:pb-8">
-          <h2 className="text-4xl md:text-6xl lg:text-6 font-medium mt-6 text-center">
-            Get a glimpse of Elegance{" "}
-            <span className="text-red-orange-500">homes</span>
-          </h2>
-        </div>
-        <p className="text-md md:text-xl text-center pb-10">
-          Latest dream home interiors delivered the hassle-free way
-        </p>
-      </div>
-
+    <section className="py-24 container">
       <div className="columns-1  lg:columns-2 gap-4 space-y-6 space-x-2">
         {images.map((img, i) => (
           <motion.div

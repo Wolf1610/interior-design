@@ -10,12 +10,12 @@ import logoImage from "@/assets/intarch-edit.png";
 const navLinks = [
   { label: "Home", href: "/" },
   {
-    label: "Design Ideas",
-    href: "#design-ideas",
+    label: "Projects",
+    href: "#projects",
     submenu: [
-      { label: "Living Room", href: "#living-room" },
-      { label: "Bedroom", href: "#bedroom" },
-      { label: "Kitchen", href: "#kitchen" },
+      { label: "Architecture", href: "project-category/architecture" },
+      { label: "Interior", href: "/project-category/interior" },
+      { label: "Cultural Complex", href: "/project-category/cultural-complex" },
     ],
   },
   { label: "Portfolio", href: "#portfolio" },
@@ -69,7 +69,7 @@ export default function Navbar() {
                             >
                               {link.label}
                               <ChevronDown
-                                className={`w-4 h-4 transition-transform duration-300 ${
+                                className={`w-4 h-4 transition-transform duration-300 cursor-pointer ${
                                   openDropdown === link.label
                                     ? "rotate-180"
                                     : ""
