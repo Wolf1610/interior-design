@@ -19,7 +19,7 @@ export default function CounterSection() {
   }, [inView, startCount]);
 // bg-[#f9f9fb]
   return (
-    <section ref={ref} className="pb-12 mt-10 md:mt-15 lg:mt-20 px-4 overflow-x-hidden">
+    <section ref={ref} className="md:pb-10 mt-10 md:mt-15 lg:mt-20 px-4 overflow-x-hidden">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold italic text-black mb-2">
           Executed
