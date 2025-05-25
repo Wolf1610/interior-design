@@ -1,6 +1,5 @@
 "use client";
 
-import heroImage from "@/assets/hero-imaage-1.jpg";
 import Button from "@/components/Button";
 import Image from "next/image";
 import { ChevronsDown } from "lucide-react";
@@ -12,7 +11,7 @@ export default function Hero() {
       <div className="relative h-[93vh] md:h-screen overflow-hidden">
         {/* Background Image */}
         <Image
-          src={heroImage}
+          src="https://res.cloudinary.com/db2vutcez/image/upload/v1748174166/hero-imaage-1_rqrsfy.jpg"
           alt="interior image"
           fill
           className="object-cover opacity-95"

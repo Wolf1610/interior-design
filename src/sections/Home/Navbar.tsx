@@ -13,7 +13,7 @@ const navLinks = [
     label: "Projects",
     href: "#projects",
     submenu: [
-      { label: "Architecture", href: "project-category/architecture" },
+      { label: "Architecture", href: "/project-category/architecture" },
       { label: "Interior", href: "/project-category/interior" },
       { label: "Cultural Complex", href: "/project-category/cultural-complex" },
     ],
