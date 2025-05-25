@@ -26,7 +26,7 @@ export default function Interiors() {
               duration: 0.5,
               delay: 0.5,
             }}
-            className="rounded-lg overflow-hidden bg-white shadow-md transition-all duration-300"
+            className="rounded-lg overflow-hidden bg-white shadow-md transition-all duration-300  hover:scale-110 active:scale-110"
             
           >
             <div className="relative">

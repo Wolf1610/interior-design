@@ -73,7 +73,7 @@ export default function Corporate_page() {
         {images.map((img, i) => (
           <motion.div
             key={i}
-            className="relative w-full object-cover group overflow-hidden rounded-lg shadow-md cursor-pointer"
+            className="relative w-full object-cover group overflow-hidden rounded-lg shadow-md cursor-pointer hover:scale-110 active:scale-110"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}

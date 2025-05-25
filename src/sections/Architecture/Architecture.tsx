@@ -16,7 +16,7 @@ export default function Architectures() {
 
   return (
     <section className="py-24 overflow-x-hidden">
-      <motion.div className="container mx-auto px-4 column-1 md:columns-2 space-y-6 md:space-x-6 max-w-8xl">
+      <motion.div className="container mx-auto px-4 column-1 md:columns-2 space-y-6 md:space-x-6 max-w-8xl ">
         {teamMembers.map((member) => (
           <motion.div
             key={member.id}
@@ -26,7 +26,7 @@ export default function Architectures() {
               duration: 0.5,
               delay: 0.5,
             }}
-            className="rounded-lg overflow-hidden bg-white shadow-md transition-all duration-300"
+            className="rounded-lg overflow-hidden bg-white shadow-md transition-all duration-300 hover:scale-110 active:scale-110"
             
           >
             <div className="relative">
