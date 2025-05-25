@@ -10,17 +10,6 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-// Animation variants
-const leftVariant = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
-
-const rightVariant = {
-  hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
-
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
@@ -41,7 +30,6 @@ export default function ContactSection() {
         {/* Left Side - Contact Info */}
         <motion.div
           className="bg-red-orange-500 text-white p-9 w-full md:w-80 rounded-md mt-10 mb-8 space-y-6"
-          variants={leftVariant}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -94,7 +82,6 @@ export default function ContactSection() {
         {/* Right Side - Form */}
         <motion.div
           className="p-8 w-full md:w-2/3"
-          variants={rightVariant}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
