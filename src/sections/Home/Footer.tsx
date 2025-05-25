@@ -38,11 +38,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/portfolio" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
-                  Portfolio
-                </a>
-              </li>
-              <li>
                 <a href="/aboutus" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   About Us
                 </a>

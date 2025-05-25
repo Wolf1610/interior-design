@@ -18,7 +18,6 @@ const navLinks = [
       { label: "Cultural Complex", href: "/project-category/cultural-complex" },
     ],
   },
-  { label: "Portfolio", href: "#portfolio" },
   { label: "About Us", href: "/aboutus" },
   { label: "Contact Us", href: "/contact" },
 ];
