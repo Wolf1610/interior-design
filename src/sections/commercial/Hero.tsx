@@ -22,7 +22,7 @@ export default function Hero() {
           >
             <h2 className="text-5xl max-w-6xl md:text-8xl tracking-wider font-medium mt-6 text-center">
               <span className="text-red-orange-500 font-bold uppercase">
-              Commercial
+              Commercial    
               </span>
             </h2>
           </motion.div>

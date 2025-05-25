@@ -33,12 +33,12 @@ export default function Footer() {
             <h4 className="font-bold text-white uppercase mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                <a href="/" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
+                <a href="/portfolio" className="hover:text-[#f45c2d] active:text-[#f45c2d]">
                   Portfolio
                 </a>
               </li>
